@@ -1,0 +1,27 @@
+{
+    "name": "malshan1993/inertia-preset",
+    "description": "Inertiajs preset Laravel preset.",
+    "keywords": ["laravel", "laravel preset", "Inertiajs"],
+    "license": "MIT",
+    "require-dev": {
+        "inertiajs/inertia-laravel": "^0.2.4"
+    },
+    "authors": [
+        {
+            "name": "malshan",
+            "email": "malshannawodya@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "malshan1993\\InertiaPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["malshan1993\\InertiaPreset\\InertiaPresetServiceProvider"]
+        }
+    }
+}
