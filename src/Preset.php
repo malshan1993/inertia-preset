@@ -12,6 +12,7 @@ class Preset extends PresetsPreset
 
     public static function install(){
         static::cleanSassDirectory();
+        static::cleanJsDirectory();
         static::updatePackages();
         static::updateMix();
         static::updateScripts();
@@ -20,6 +21,10 @@ class Preset extends PresetsPreset
 
     public static function cleanSassDirectory(){
         File::cleanDirectory(resource_path('sass'));
+    }
+
+    public static function cleanJsDirectory(){
+        File::cleanDirectory(resource_path('js'));
     }
 
     public static function updatePackageArray($packages){
